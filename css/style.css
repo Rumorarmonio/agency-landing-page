@@ -1,17 +1,20 @@
-body {
-    font: 400 16px 'Open Sans', normal;
+/* variables */
+:root {
+    font: 400 16px 'Open Sans';
+    --main-width: 1249px;
+    --light-grey: #E0E0E0;
 }
 
 /* header */
 .header_wrapper {
     padding-top: 29px;
-    background-color: #E0E0E0;
+    background-color: var(--light-grey);
 }
 
 header {
     display: flex;
     justify-content: center;
-    width: 1249px;
+    width: var(--main-width);
     min-height: 89px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.8);
@@ -38,8 +41,8 @@ header {
     display: flex;
     align-items: center;
     padding: 0 30px;
-    font: 700 16px 'Open Sans', normal;
-    color: #E0E0E0;
+    font: 700 16px 'Open Sans';
+    color: var(--light-grey);
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -50,4 +53,60 @@ header {
 
 .nav_active {
     background-color: #FF3F40;
+}
+
+/* main */
+/* intro */
+.intro_wrapper {
+    display: block;
+    width: 100%;
+    padding: 104px 0 110px;
+    background-color: var(--light-grey);
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    width: var(--main-width);
+    margin: 0 auto;
+}
+
+.intro_info {
+    max-width: 595px;
+}
+
+.intro_heading {
+    font: 800 60px/72px 'Open Sans';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: -15px 0 19px;
+}
+
+.intro_special {
+    letter-spacing: 7px;
+}
+
+.intro_text {
+    font: 400 16px/28px 'Open Sans', normal;
+    margin-bottom: 57px;
+}
+
+.intro_action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 227px;
+    min-height: 55px;
+    font: 700 18px 'Open Sans';
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF2D2D;
+    border-radius: 5px;
+}
+
+.intro_video {
+    width: 551px;
+    height: 356px;
+    object-fit: cover;
+    box-shadow: -3px -14px 73px rgba(0, 0, 0, 0.3);
 }
