@@ -5,40 +5,49 @@
     --light-grey: #E0E0E0;
 }
 
-/* header */
-.header_wrapper {
-    padding-top: 29px;
-    background-color: var(--light-grey);
+.flex {
+    display: flex;
 }
 
-header {
-    display: flex;
+/* base container for all page content */
+.page {
+    min-width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* header */
+.page__container_grey {
+    min-width: 100%;
+    padding-top: 29px;
+    background-color: var(--light-grey);
+    padding-bottom: 110px;
+    margin-bottom: 63px;
+}
+
+.header {
     justify-content: center;
     width: var(--main-width);
     min-height: 89px;
-    margin: 0 auto;
+    margin: 0 auto 103px;
     background-color: rgba(0, 0, 0, .8);
 }
 
-.header_nav {
-    margin-left: -32px;
-}
-
-.nav_list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
+.menu {
     list-style: none;
 }
 
-.nav_list>li {
-    display: flex;
+.header__menu {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__item {
     min-height: 89px;
 }
 
-.nav_link {
-    display: flex;
+.menu__link {
     align-items: center;
     padding: 0 30px;
     font: 700 16px 'Open Sans';
@@ -47,53 +56,43 @@ header {
     text-decoration: none;
 }
 
-.nav_link:hover {
+.menu__link:hover {
     background-color: #ff3f40;
 }
 
-.nav_active {
+.menu__link_active {
     background-color: #FF3F40;
 }
 
 /* main */
 /* intro section */
-.intro_wrapper {
-    margin-bottom: 62px;
-    display: block;
-    width: 100%;
-    padding: 104px 0 110px;
-    background-color: var(--light-grey);
-}
-
 .intro {
-    display: flex;
     justify-content: space-between;
     width: var(--main-width);
     margin: 0 auto;
 }
 
-.intro_info {
+.intro__info {
     max-width: 595px;
 }
 
-.intro_heading {
+.intro__heading {
     font: 800 60px/72px 'Open Sans';
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: -15px 0 19px;
 }
 
-.intro_special {
+.intro__special {
     letter-spacing: 7px;
 }
 
-.intro_text {
+.text {
     font: 400 16px/28px 'Open Sans', normal;
     margin-bottom: 57px;
 }
 
-.intro_action {
-    display: flex;
+.action-button {
     justify-content: center;
     align-items: center;
     width: 227px;
@@ -105,64 +104,126 @@ header {
     border-radius: 5px;
 }
 
-.intro_video {
+.intro__video {
     width: 551px;
     height: 356px;
     object-fit: cover;
     box-shadow: -3px -14px 73px rgba(0, 0, 0, .3);
 }
 
-/* services section */
-.services {
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+.page__container {
     width: var(--main-width);
 }
 
-.services_info {
+/* services section */
+.services {
+    margin: 0 auto 85px;
+    justify-content: space-between;
+}
+
+.services__info {
     max-width: 549px;
 }
 
-.services_heading {
+.services__heading {
     margin-bottom: 32px;
     font: 700 42px/55px 'Open Sans';
-    letter-spacing: 0.5px;
+    letter-spacing: .5px;
     text-transform: uppercase;
 }
 
-.services_action {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 227px;
-    min-height: 55px;
-    font: 700 18px 'Open Sans';
-    text-decoration: none;
+.action-button_white {
     color: #FF2D2D;
     background-color: #fff;
     border: solid 2px;
     border-radius: 5px;
 }
 
-.services_items {
+.services__items {
     width: 610px;
     margin-top: 45px;
     display: grid;
     grid-template: repeat(2, 1fr) / 50% 50%;
-    grid-row-gap: 33px;
+    grid-row-gap: 26px;
     grid-column-gap: 20px;
 }
 
-.service_item {
+.service-item {
     width: 303px;
 }
 
-.service_heading {
+.service-heading {
     font: 700 24px 'Open Sans';
     margin-bottom: -10px;
 }
 
-.service_caption {
+.service-caption {
     line-height: 28px;
+}
+
+.separator {
+    width: var(--main-width);
+    margin-bottom: 58px;
+}
+
+/* products section */
+.products {
+    flex-direction: column;
+    align-items: center;
+}
+
+.products__heading {
+    font: 700 42px 'Open Sans';
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+
+.products__info {
+    position: relative;
+    margin: 0;
+    max-width: 590px;
+    text-align: center;
+    line-height: 28px;
+    margin-bottom: 115px;
+}
+
+.products__info::after {
+    width: 128px;
+    content: '';
+    position: absolute;
+    left: 39%;
+    top: 85px;
+    background-color: #FF2D2D;
+    border: solid 1px #FF2D2D;
+}
+
+.products__menu {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 56px;
+}
+
+.product-category {
+    padding: 0 28px;
+    font: 700 22px 'Open Sans';
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.product-category:hover {
+    background-color: unset;
+    color: #FF2D2D;
+}
+
+.product-category_active {
+    color: #FF2D2D;
+}
+
+.products__images {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 25%);
+    grid-gap: 10px;
 }

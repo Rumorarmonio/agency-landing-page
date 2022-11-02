@@ -9,39 +9,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agency landing page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 
-<body>
-    <div class="header_wrapper">
-        <header>
-            <nav class="header_nav">
-                <ul class="nav_list">
-                    <li><a href="#" class="nav_link nav_active">Home</a></li>
-                    <li><a href="#portfolio" class="nav_link">Portfolio</a></li>
-                    <li><a href="#about" class="nav_link">About us</a></li>
-                    <li><a href="#contacts" class="nav_link">Contacts</a></li>
+<body class="page flex">
+    <div class="page__container_grey">
+        <header class="header flex">
+            <nav>
+                <ul class="menu header__menu flex">
+                    <li class="menu__item flex">
+                        <a href="#" class="menu__link menu__link_active flex">Home</a>
+                    </li>
+                    <li class="menu__item flex">
+                        <a href="#portfolio" class="menu__link flex">Portfolio</a>
+                    </li>
+                    <li class="menu__item flex">
+                        <a href="#about" class="menu__link flex">About us</a>
+                    </li>
+                    <li class="menu__item flex">
+                        <a href="#contacts" class="menu__link flex">Contacts</a>
+                    </li>
                 </ul>
             </nav>
         </header>
-    </div>
 
-    <div class="intro_wrapper">
-        <section class="intro">
-            <div class="intro_info">
-                <h2 class="intro_heading">Our strong <span class="intro_special">organization</span></h2>
-                <p class="intro_text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
+        <section class="intro flex">
+            <div class="intro__info">
+                <h2 class="intro__heading">Our strong <span class="intro__special">organization</span></h2>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
                     incididunt ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>
-                <a class="intro_action" href="">Contact Us</a>
+                <a class="action-button flex" href="">Contact Us</a>
             </div>
-            <video class="intro_video" preload="auto" muted autoplay loop poster="img/succes-team.jpg">
+            <video class="intro__video" preload="auto" muted autoplay loop poster="img/succes-team.jpg">
                 <source src="video/business140.mp4" type="video/mp4">
                 Обновите браузер!
                 <a href="video/business140.mp4">Ссылка на видео</a>
@@ -49,45 +51,88 @@
         </section>
     </div>
 
-    <section class="services">
-        <div class="services_info">
-            <h2 class="services_heading">Do you know we can provide for you ?</h2>
-            <p class="intro_text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
-                incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod
-                tempor incididunt ut labore et.</p>
-            <a class="services_action" href="">Learn More</a>
-        </div>
-        <div class="services_items">
-            <div class="service_item">
-                <img src="img/icons/gearwheel.svg" alt="gearwheel.svg">
-                <h3 class="service_heading">Management</h3>
-                <p class="service_caption">Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do eiusmod
-                    btdempor in didunt utlae
-                    ore etioe.Lorem ipsum new idolor</p>
+    <main class="page__container">
+        <section class="services flex">
+            <div class="services__info">
+                <h2 class="services__heading">Do you know we can provide for you ?</h2>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor
+                    incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod
+                    tempor incididunt ut labore et.</p>
+                <a class="action-button action-button_white flex" href="">Learn More</a>
             </div>
-            <div class="service_item">
-                <img src="img/icons/pencil.svg" alt="pencil.svg">
-                <h3 class="service_heading">UI/UX Design</h3>
-                <p class="service_caption">Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do eiusmod
-                    btdempor in didunt utlae
-                    ore etioe.Lorem ipsum new idolor</p>
+            <div class="services__items">
+                <div class="service-item">
+                    <img src="img/icons/gearwheel.svg" alt="gearwheel.svg">
+                    <h3 class="service-heading">Management</h3>
+                    <p class="service-caption">Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do
+                        eiusmod
+                        btdempor in didunt utlae
+                        ore etioe.Lorem ipsum new idolor</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/icons/pencil.svg" alt="pencil.svg">
+                    <h3 class="service-heading">UI/UX Design</h3>
+                    <p class="service-caption">Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do
+                        eiusmod
+                        btdempor in didunt utlae
+                        ore etioe.Lorem ipsum new idolor</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/icons/diamond.svg" alt="diamond.svg">
+                    <h3 class="service-heading">Logo / Branding</h3>
+                    <p class="service-caption">Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do
+                        eiusmod
+                        btdempor in didunt utlae
+                        ore etioeew idolor sit amet,</p>
+                </div>
+                <div class="service-item">
+                    <img src="img/icons/cargo.svg" alt="cargo.svg">
+                    <h3 class="service-heading">Animation</h3>
+                    <p class="service-caption">Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do
+                        eiusmod
+                        btdempor in didunt utlae
+                        ore etioe.Lorem ipsum new idolor sit amet,</p>
+                </div>
             </div>
-            <div class="service_item">
-                <img src="img/icons/diamond.svg" alt="diamond.svg">
-                <h3 class="service_heading">Logo / Branding</h3>
-                <p class="service_caption">Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do eiusmod
-                    btdempor in didunt utlae
-                    ore etioeew idolor sit amet,</p>
+        </section>
+
+        <hr class="separator">
+
+        <section class="products flex">
+            <h2 class="products__heading">Feature products</h2>
+            <p class="products__info">Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do eiusmod tempor
+                incididunt ut labore et.</p>
+            <nav>
+                <ul class="menu products__menu flex">
+                    <li class="menu__product flex">
+                        <a href="#" class="product-category product-category_active flex">All</a>
+                    </li>
+                    <li class="menu__product flex">
+                        <a href="#" class="product-category flex">Print template</a>
+                    </li>
+                    <li class="menu__product flex">
+                        <a href="#" class="product-category flex">Web template</a>
+                    </li>
+                    <li class="menu__product flex">
+                        <a href="#" class="product-category flex">User interface</a>
+                    </li>
+                    <li class="menu__product flex">
+                        <a href="#" class="product-category flex">Mock-up</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="products__images">
+                <img src="https://via.placeholder.com/300" alt="Product image" class="product-image">
+                <img src="https://via.placeholder.com/300" alt="Product image" class="product-image">
+                <img src="https://via.placeholder.com/300" alt="Product image" class="product-image">
+                <img src="https://via.placeholder.com/300" alt="Product image" class="product-image">
+                <img src="https://via.placeholder.com/300" alt="Product image" class="product-image">
+                <img src="https://via.placeholder.com/300" alt="Product image" class="product-image">
+                <img src="https://via.placeholder.com/300" alt="Product image" class="product-image">
+                <img src="https://via.placeholder.com/300" alt="Product image" class="product-image">
             </div>
-            <div class="service_item">
-                <img src="img/icons/cargo.svg" alt="cargo.svg">
-                <h3 class="service_heading">Animation</h3>
-                <p class="service_caption">Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do eiusmod
-                    btdempor in didunt utlae
-                    ore etioe.Lorem ipsum new idolor sit amet,</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 </body>
 
 </html>
