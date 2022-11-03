@@ -3,6 +3,7 @@
     font: 400 16px 'Open Sans';
     --main-width: 1249px;
     --light-grey: #E0E0E0;
+    --dark-grey: #2C2C2C;
 }
 
 .flex {
@@ -170,6 +171,7 @@
 .products {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 117px;
 }
 
 .products__heading {
@@ -226,4 +228,128 @@
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(4, 25%);
     grid-gap: 10px;
+}
+
+/* team section */
+.team {
+    margin-bottom: 128px;
+}
+
+.team__heading {
+    font-size: 42px;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.team__info {
+    position: relative;
+    width: 450px;
+    line-height: 28px;
+    margin-bottom: 103px;
+}
+
+.team__info::after {
+    width: 128px;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 115px;
+    background-color: #FF2D2D;
+    border: solid 1px #FF2D2D;
+}
+
+.team__member_main {
+    float: left;
+    margin-right: 76px;
+}
+
+.member-name {
+    margin-top: 110px;
+    font: 600 30px 'Open Sans';
+    text-transform: uppercase;
+    letter-spacing: .2px;
+    margin-bottom: 16px;
+}
+
+.member-info {
+    width: 1030px;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.members__menu {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 56px;
+}
+
+.social-link {
+    align-items: center;
+    padding-right: 40px;
+    font: italic 400 18px 'Open Sans';
+    color: #000;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: #FF2D2D;
+}
+
+.members__list {
+    display: grid;
+    grid-template: 1fr / repeat(4, 25%);
+    grid-gap: 10px;
+}
+
+/* subscription section */
+.page__container_dark {
+    min-width: 100%;
+    padding-top: 108px;
+    background-color: var(--dark-grey);
+    padding-bottom: 110px;
+    margin-bottom: 63px;
+}
+
+.subscription {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.subscription__heading {
+    font: 700 42px 'Open Sans';
+    letter-spacing: 1.05px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.subscription__info {
+    margin-top: 0;
+    margin-bottom: 60px;
+    color: #fff;
+}
+
+.subscription__form {
+    flex-direction: row;
+    align-items: center;
+}
+
+.form__email-input {
+    box-sizing: border-box;
+    width: 524px;
+    height: 82px;
+    margin-right: 20px;
+    padding-left: 38px;
+    border-radius: 7px;
+    letter-spacing: .4px;
+}
+
+.action-button_thicker {
+    width: 217px;
+    height: 82px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-transform: uppercase;
 }
