@@ -395,7 +395,7 @@
 }
 
 .contacts__grid-container {
-    grid-template: 70px 250px 70px / 340px 340px calc(100% - 340px * 2 - 46px * 2);
+    grid-template: 70px 250px 70px / 340px 340px 1fr;
     grid-gap: 46px;
 }
 
