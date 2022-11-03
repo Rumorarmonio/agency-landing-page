@@ -307,10 +307,8 @@
 /* subscription section */
 .page__container_dark {
     min-width: 100%;
-    padding-top: 108px;
     background-color: var(--dark-grey);
-    padding-bottom: 110px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .subscription {
@@ -323,6 +321,7 @@
     font: 700 42px 'Open Sans';
     letter-spacing: 1.05px;
     color: #fff;
+    margin-top: 143px;
     margin-bottom: 10px;
 }
 
@@ -335,6 +334,7 @@
 .subscription__form {
     flex-direction: row;
     align-items: center;
+    margin-bottom: 110px;
 }
 
 .subscription__email-input {
@@ -362,8 +362,7 @@
     min-width: 91%;
     margin-left: 9%;
     padding-top: 29px;
-    padding-bottom: 110px;
-    margin-bottom: 63px;
+    margin-bottom: 110px;
 }
 
 .contacts {
@@ -375,6 +374,7 @@
     letter-spacing: .4px;
     text-transform: uppercase;
     margin-bottom: 12px;
+    margin-top: 65px;
 }
 
 .contacts__info {
@@ -417,6 +417,8 @@
 
 .contacts__message-input {
     grid-area: 2 / 1 / 2 / 3;
+    padding-top: 32px;
+    resize: none;
 }
 
 .action-button_wider {
@@ -448,4 +450,20 @@
 
 .verbose-info__email {
     margin-bottom: 27px;
+}
+
+/* footer */
+.footer {
+    height: 113px;
+    padding: 0 260px 0 135px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__copyright {
+    color: #B8B8B8;
+}
+
+.socials__menu>li {
+    margin: 0 9px;
 }
