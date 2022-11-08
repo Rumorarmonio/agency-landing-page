@@ -278,9 +278,18 @@
     border: solid 1px #FF2D2D;
 }
 
+.team__member {
+    background-color: rgb(220, 255, 155);
+}
+
+.team__member:nth-child(2n) {
+    background-color: rgb(255, 237, 155);
+}
+
 .team__member_main {
     float: left;
     margin-right: 76px;
+    background-color: rgb(193, 255, 252);
 }
 
 .member-name {
