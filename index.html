@@ -93,7 +93,7 @@
             </div>
         </section>
 
-        <section class="products">
+        <section id="portfolio" class="products">
             <div class="section-heading section-heading_center">
                 <h2 class="products__heading">Feature products</h2>
                 <p class="products__info">Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do eiusmod tempor
@@ -128,7 +128,7 @@
             </div>
         </section>
 
-        <section class="team">
+        <section id="about" class="team">
             <div class="section-heading">
                 <h2 class="team__heading">Meet our team</h2>
                 <p class="team__info">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod
@@ -180,7 +180,7 @@
     </div>
 
     <div class="page__container page__container_right">
-        <section class="contacts">
+        <section id="contacts" class="contacts">
             <div class="section-heading">
                 <h2 class="contacts__heading">Get in touch</h2>
                 <p class="contacts__info">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod
@@ -190,15 +190,16 @@
                     cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
             </div>
             <form class="contacts__grid-container" action="get">
-                <input class="input contacts__name-input" type="text" placeholder="Name">
-                <input class="input contacts__email-input" type="email" placeholder="Your Mail">
-                <textarea class="input contacts__message-input" type="text" placeholder="Type your message"></textarea>
+                <input class="input contacts__name-input" type="text" placeholder="Name" name="Name">
+                <input class="input contacts__email-input" type="email" placeholder="Your Mail" name="email">
+                <textarea class="input contacts__message-input" type="text" placeholder="Type your message"
+                    name="message"></textarea>
                 <button class="action-button action-button_wider" type="submit">Send message</button>
                 <div class="verbose-info contacts__verbose-info">
                     <h3 class="verbose-info__heading">Contact info</h3>
-                    <p class="verbose-info__address">Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh</p>
-                    <p class="verbose-info__email">redwan@deviserweb.com</p>
-                    <p class="verbose-info__telephone">(+88) 017 617 46373</p>
+                    <address class="verbose-info__address">Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh</address>
+                    <a class="verbose-info__email" href="mailto:redwan@deviserweb.com">redwan@deviserweb.com</a>
+                    <a class="verbose-info__telephone" href="tel:(+88)01761746373">(+88) 017 617 46373</a>
                 </div>
             </form>
         </section>
