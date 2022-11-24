@@ -30,11 +30,27 @@
 .header {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: var(--main-width);
     min-height: 89px;
     margin: 0 auto 103px;
     background-color: rgba(0, 0, 0, .8);
+}
+
+@media (max-width: 570px) {
+    .header {
+        position: fixed;
+        z-index: 1;
+    }
+
+    .page__container_grey {
+        padding-top: 0;
+    }
+
+    .intro {
+        padding-top: 120px;
+    }
 }
 
 .menu {
@@ -70,6 +86,92 @@
 
 .menu__link_active {
     background-color: var(--light-red);
+}
+
+/* popup menu */
+.popup-menu__button {
+    z-index: 1;
+    display: none;
+    padding: 0;
+    min-width: 140px;
+    height: 50px;
+    background-image: url('/img/svg/menu-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #FFF;
+}
+
+@media (max-width: 570px) {
+    .popup-menu__button {
+        display: block;
+    }
+
+    .menu {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+}
+
+.popup-menu {
+    position: relative;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.popup-menu__list {
+    visibility: visible;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    transition: visibility, transform 1s, 0.5s ease-in-out;
+}
+
+@media (min-width: 570px) {
+    .popup-menu__list {
+        visibility: hidden;
+    }
+}
+
+.hide-popup {
+    transform: translateY(-50px);
+    z-index: -1;
+    visibility: hidden;
+}
+
+.popup-menu__item {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    min-height: 89px;
+}
+
+.popup-menu__item:hover {
+    background-color: var(--light-red);
+}
+
+.popup-menu__link {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    color: #e0e0e0;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 /* main */
@@ -557,6 +659,12 @@
     background-color: #E6E6E6;
 }
 
+@media (max-width: 1230px) {
+    .input {
+        margin-right: 0;
+    }
+}
+
 .input::placeholder {
     color: #000;
 }
@@ -592,6 +700,12 @@
 
 .verbose-info__content {
     width: 300px;
+}
+
+@media (max-width: 1230px) {
+    .contacts__verbose-info {
+        padding-left: 30px;
+    }
 }
 
 .verbose-info__heading {
