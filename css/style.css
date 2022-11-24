@@ -90,15 +90,11 @@
 
 /* popup menu */
 .popup-menu__button {
-    z-index: 1;
     display: none;
-    padding: 0;
     min-width: 140px;
     height: 50px;
-    background-image: url('/img/svg/menu-icon.svg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     background-color: #FFF;
+    border-radius: 20px;
 }
 
 @media (max-width: 570px) {
@@ -109,20 +105,8 @@
     .menu {
         border: 0;
         clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
         position: absolute;
-        width: 1px;
     }
-}
-
-.popup-menu {
-    position: relative;
-    align-self: center;
-    display: flex;
-    justify-content: center;
 }
 
 .popup-menu__list {
@@ -130,12 +114,10 @@
     position: absolute;
     bottom: 0;
     transform: translateY(100%);
-    z-index: -1;
     display: flex;
     flex-direction: column;
     list-style: none;
     padding: 0;
-    margin: 0;
     background-color: black;
     transition: visibility, transform 1s, 0.5s ease-in-out;
 }
@@ -148,7 +130,6 @@
 
 .hide-popup {
     transform: translateY(-50px);
-    z-index: -1;
     visibility: hidden;
 }
 
