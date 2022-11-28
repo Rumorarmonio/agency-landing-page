@@ -177,6 +177,10 @@
 }
 
 @media (max-width: 1249px) {
+    .intro {
+        width: 99%;
+    }
+
     .intro__info {
         width: 50%;
     }
@@ -196,6 +200,12 @@
     margin: -15px 0 19px;
 }
 
+@media (max-width: 1160px) {
+    .intro__heading {
+        font-size: 50px;
+    }
+}
+
 .intro__special {
     letter-spacing: 7px;
     overflow-wrap: break-word;
@@ -204,7 +214,7 @@
 
 .text {
     font: 400 16px/28px 'Open Sans', normal;
-    margin-bottom: 57px;
+    margin: 0 15px 57px 0;
 }
 
 .action-button {
@@ -218,6 +228,7 @@
     color: #fff;
     background-color: var(--red);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .intro__video {
@@ -242,6 +253,12 @@
 .page__container {
     width: 100%;
     max-width: var(--main-width);
+}
+
+@media (max-width: 1249px) {
+    .page__container {
+        max-width: 99%;
+    }
 }
 
 /* services section */
@@ -597,6 +614,13 @@
     }
 }
 
+@media (max-width: 1249px) {
+    .page__container_right {
+        min-width: 0;
+        max-width: 99%;
+    }
+}
+
 .contacts {
     padding: 53px 0 110px;
 }
@@ -652,7 +676,7 @@
 
 .contacts__message-input {
     grid-area: 2 / 1 / 2 / 3;
-    padding-top: 32px;
+    padding: 32px 38px;
     resize: none;
 }
 
@@ -726,6 +750,14 @@
 
 .socials__menu>li {
     margin: 0 9px;
+}
+
+.footer__social-link {
+    display: block;
+}
+
+.footer__social-image {
+    display: block;
 }
 
 @media (max-width: 1230px) {
